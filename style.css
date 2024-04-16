@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+:root {
+    font-size: 62.5%;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --text-color-primary: #E1E1E6;
+    --main-bg-color: #2F2F33;
+
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--main-bg-color);
+    color: var(--text-color-primary);
+}
+
+body * {
+    font-family: var(--ff-primary);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#app {
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 1120px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 11.5rem;
+    margin-bottom: 8.7rem;
+}
+
+header #logo {
+    height: 3.2rem;
+    width: 18.6rem;
+}
+
+button:hover svg path {
+    fill: #FFFFFF; /* Cor que deseja quando o mouse está em cima */
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.search input {
+    height: 4.8rem;
+    width: 46.2rem;
+    border-radius: .5rem;
+    padding: 1.6rem;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+
+    background-color: #06181C;
+}
+
+.search input::placeholder {
+    color: #7C7C8A;
+}
+
+.search button {
+    background-color: #FFFFFF;
+    font-weight: bold;
+    color: #065E7C;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    
+    height: 4.8rem;
+    width: auto;
+    padding: 1.2rem 3.2rem;
+
+    cursor: pointer;
+    transition: background .3s;
+
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.search button img {
+    width: 2.2rem;
+    height: 2.1rem;
+}
+
+.search button:hover {
+    background-color: #065E7C;
+    color: #FFFFFF;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table * {
+    font-size: 2rem;
+    color: #E1E1E6;
+}
+
+table th {
+    background-color: #092D38;
+    text-align: left;
+
+    padding: 1.6rem;
+}
+
+table th:first-child {
+    border-top-left-radius: .5rem;
+}
+
+table th:last-child {
+    border-top-right-radius: .5rem;
+}
+
+table tr:nth-child(even) {
+    background: #06161b88;
+}
+
+table tr:nth-child(odd) {
+    background: #06181C;
+}
+
+.no-data {
+    width: 62.4rem;
+    background-color: #ac1111;
+}
+
+table td {
+    font-size: 2rem;
+    padding: 2.4rem 2.4rem 2.4rem 4rem;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+td.user img {
+    width: 5.6rem;
+    height: 5.6rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td.user a {
+ text-decoration: none;
+}
+
+td.user p {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: .8rem;
+}
+
+td.user span {
+    font-size: 2rem;
+}
+td.user span:hover {
+    color: #afa6e2;
+}
+
+td button i {
+    color: #FFFFFF;
+    font-size: 2.6rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.remove {
+    background-color: transparent; /* torna o fundo do botão transparente */
+    border: none; /* remove a borda do botão, se aplicável */
+}
+
+.remove .ph-trash {
+    background-color: transparent; /* torna o fundo do ícone transparente */
+}
+
+td button i:hover {
+    color: #F75A68;
+}
+
+
