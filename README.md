@@ -1,4 +1,4 @@
 # Github Favorites
-Page to list your favorites devs on github
+Page to list your favorites developers on github
 
 ![Gitfav](github-favorites.png)
